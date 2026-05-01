@@ -1,0 +1,74 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sphereGradientGH" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8C42;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF6B1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E84C0A;stop-opacity:1" />
+    </linearGradient>
+
+```
+<radialGradient id="sphereShineGH" cx="35%" cy="35%" r="40%">
+  <stop offset="0%" style="stop-color:#FFFACD;stop-opacity:0.6" />
+  <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+</radialGradient>
+
+<linearGradient id="metalGradientGH" x1="0%" y1="0%" x2="100%" y2="100%">
+  <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+  <stop offset="50%" style="stop-color:#0f0f0f;stop-opacity:1" />
+  <stop offset="100%" style="stop-color:#050505;stop-opacity:1" />
+</linearGradient>
+
+<filter id="shadowFilterGH">
+  <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.4"/>
+</filter>
+```
+
+  </defs>
+
+  <!-- Background transparent pour GitHub -->
+
+  <rect width="256" height="256" fill="#ffffff" opacity="0"/>
+
+  <!-- Boîte noire arrondie optimisée pour GitHub -->
+
+  <rect x="28" y="28" width="200" height="200" rx="48" fill="url(#metalGradientGH)" filter="url(#shadowFilterGH)"/>
+
+  <!-- Highlight subtil sur la boîte -->
+
+  <rect x="28" y="28" width="200" height="100" rx="48" fill="#ffffff" opacity="0.06"/>
+
+  <!-- Lettre F en 3D -->
+
+  <g id="letterF-gh">
+    <!-- Barre verticale principale -->
+    <path d="M 85 75 L 95 75 L 95 180 L 85 180 Z" fill="#a0a0a0"/>
+
+```
+<!-- Barre horizontale supérieure -->
+<path d="M 85 75 L 130 75 L 130 88 L 95 88 Z" fill="#b0b0b0"/>
+
+<!-- Barre horizontale médiane -->
+<path d="M 85 120 L 120 120 L 120 133 L 95 133 Z" fill="#a5a5a5"/>
+
+<!-- Ombres pour effet 3D -->
+<path d="M 85 75 L 92 75 L 92 180 L 85 180 Z" fill="#1a1a1a" opacity="0.3"/>
+```
+
+  </g>
+
+  <!-- Sphère orange brillante de grande taille -->
+
+  <circle cx="155" cy="125" r="32" fill="url(#sphereGradientGH)" filter="url(#shadowFilterGH)"/>
+
+  <!-- Reflet brillant sur la sphère -->
+
+  <circle cx="155" cy="125" r="32" fill="url(#sphereShineGH)"/>
+
+  <!-- Highlight haute définition -->
+
+  <ellipse cx="143" cy="110" rx="10" ry="12" fill="#ffffff" opacity="0.5"/>
+
+  <!-- Contour subtil -->
+
+  <circle cx="155" cy="125" r="32" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.25"/>
+</svg>
